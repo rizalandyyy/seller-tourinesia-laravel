@@ -17,11 +17,12 @@
 	<meta name="format-detection" content="telephone=no">
 	
 	<!-- PAGE TITLE HERE -->
-	<title>Dompet : Payment Admin Template</title>
+	<title>Seller Tourinesia</title>
 	
 	<!-- FAVICONS ICON -->
 	<link rel="shortcut icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/style.css') }}">
+    <script src="https://kit.fontawesome.com/9329f29326.js" crossorigin="anonymous"></script>
     
 </head>
 
@@ -57,7 +58,7 @@
 												</div>
                                             </div>
                                             <div class="mb-3">
-                                                <a href="page-forgot-password.html">Lupa Password?</a>
+                                                <a href="forgotpassword">Lupa Password?</a>
                                             </div>
                                         </div>
                                         <div class="text-center">
@@ -73,7 +74,7 @@
                                         </a>
                                     </form>
                                     <div class="new-account mt-3">
-                                        <center><p>Belum Punya Akun? <a class="text-primary" href="register.blade.php">Daftar!</a></p></center>
+                                        <center><p>Belum Punya Akun? <a class="text-primary" href="register">Daftar!</a></p></center>
                                     </div>
                                 </div>
                             </div>
@@ -93,7 +94,7 @@
     <script src="vendor/global/global.min.js"></script>
     <script src="js/custom.min.js"></script>
     <script src="js/dlabnav-init.js"></script>
-	<script src="js/styleSwitcher.js"></script>
+	<!-- <script src="js/styleSwitcher.js"></script> -->
 </body>
 
 <!-- Mirrored from dompet.dexignlab.com/xhtml/page-login.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Aug 2021 02:09:38 GMT -->
