@@ -2,7 +2,6 @@
 <html lang="en" class="h-100">
 
 
-<!-- Mirrored from dompet.dexignlab.com/xhtml/page-login.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Aug 2021 02:09:38 GMT -->
 <head>
     <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,20 +9,20 @@
 	<meta name="author" content="" />
 	<meta name="robots" content="" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Dompet : Payment Admin Template" />
-	<meta property="og:title" content="Dompet : Payment Admin Template" />
-	<meta property="og:description" content="Dompet : Payment Admin Template" />
-	<meta property="og:image" content="social-image.png" />
+	<meta name="description" content="Tourinesia - Platform yang membatu kalian untuk mempermudah membeli tiket, suvenir, dan virtual tour dengan mudah, cepat, dan nyaman" />
+	<meta property="og:title" content="Tourinesia - Platform Wisata Online" />
+	<meta property="og:description" content="Tourinesia - Platform yang membatu kalian untuk mempermudah membeli tiket, suvenir, dan virtual tour dengan mudah, cepat, dan nyaman" />
+	<meta property="og:image" content="{{ asset('/images/tourinesia2.png') }}" />
 	<meta name="format-detection" content="telephone=no">
-	
+
 	<!-- PAGE TITLE HERE -->
 	<title>Seller Tourinesia</title>
-	
+
 	<!-- FAVICONS ICON -->
-	<link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+	<link rel="icon" href="{{ urlasset('/images/tourinesia2.png') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/style.css') }}">
     <script src="https://kit.fontawesome.com/9329f29326.js" crossorigin="anonymous"></script>
-    
+
 </head>
 
 <body class="vh-100">
@@ -96,6 +95,4 @@
     <script src="js/dlabnav-init.js"></script>
 	<!-- <script src="js/styleSwitcher.js"></script> -->
 </body>
-
-<!-- Mirrored from dompet.dexignlab.com/xhtml/page-login.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Aug 2021 02:09:38 GMT -->
 </html>
