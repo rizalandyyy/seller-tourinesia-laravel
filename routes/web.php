@@ -1,6 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Auth\ForgotPasswordController;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\Auth\SetupPasswordController;
+use App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,24 +17,21 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function () {
-    return view('login');
-});
-Route::get('/login', function () {
-    return view('login');
-});
-Route::get('/index', function () {
-    return view('index');
-});
-Route::get('/register', function () {
-    return view('register');
-});
-Route::get('/forgotpassword', function () {
-    return view('forgotpassword');
-});
-Route::get('/setuppassword', function () {
-    return view('setuppassword');
-});
+
+
+
+
+//Protected Route
+Route::get('/', [DashboardController::class, 'index'])->name('/')->middleware('auth');
+
+//Public Route
+Route::get('/login', [LoginController::class, 'index'])->name('login');
+Route::get('/forgot', [ForgotPasswordController::class, 'index'])->name('forgot');
+Route::get('/register', [RegisterController::class, 'index'])->name('register');
+Route::post('/register', [RegisterController::class, 'store']);
+Route::get('/setup_password', [SetupPasswordController::class, 'index'])->name('setup_password');
+
+
 Route::get('/editprofil', function () {
     return view('editprofil');
 });
